@@ -1,5 +1,5 @@
 body{
-    background-image: url("./resources/bg.jpg");
+    background-image: url("./resources/bg-overlay.png"), url("./resources/bg.jpg");
     background-position: center;
 }
 #icon{
@@ -30,7 +30,6 @@ body{
     }
     a{
         color: white;
-        /* text-decoration: dotted; */
         cursor: pointer;
         &:hover{
             color: red;
@@ -51,7 +50,7 @@ body{
         padding: 20px 0;
         cursor: pointer;
         &:hover{
-            background-color: grey;
+            background-color: #1a191981;
         }
     }
 }
@@ -79,5 +78,9 @@ body{
         >button{
             padding:15px 60px;
         }
+    }
+    #tabs{
+        display: flex;
+        flex-direction: column;
     }
 }
