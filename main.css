@@ -7,7 +7,7 @@ body{
     text-align: center;
     margin-top: 200px;
     >svg{
-        width: 5%;
+        width: 10%;
     }
 }
 
@@ -32,23 +32,38 @@ body{
         color: white;
         /* text-decoration: dotted; */
         cursor: pointer;
+        &:hover{
+            color: red;
+        }
     }
 }
-#links{
-    ul{
-        padding: 0;
-    }
-    li{
-        list-style-type: none;
+
+#buttons{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    button{
+        background-color: transparent;
+        color: white;
         border: 1px solid white;
         border-radius: 3px;
         text-align: center;
         padding: 20px 0;
+        cursor: pointer;
+        &:hover{
+            background-color: grey;
+        }
     }
-    a{
+}
+.content{
+    display: none;
+}
+#work, #about, #contact{
+    img{
+        width: 100%;
+    }
+    p{
         color: white;
-        text-decoration: none;
-        font-family: 'Courier New', Courier, monospace;
     }
 }
 
@@ -58,13 +73,11 @@ body{
             text-align: center;
         }
     }
-    #links{
-        >ul{
-            display: flex;
-            justify-content: center;
-        }
-        li{
-            padding: 10px 40px;
+    #buttons{
+        flex-direction: row;
+        justify-content: center;
+        >button{
+            padding:15px 60px;
         }
     }
 }
