@@ -7,7 +7,7 @@ body{
     text-align: center;
     margin-top: 200px;
     >svg{
-        width: 10%;
+        width: 5%;
     }
 }
 
@@ -49,5 +49,22 @@ body{
         color: white;
         text-decoration: none;
         font-family: 'Courier New', Courier, monospace;
+    }
+}
+
+@media (min-width: 992px){
+    #intro{
+        p{
+            text-align: center;
+        }
+    }
+    #links{
+        >ul{
+            display: flex;
+            justify-content: center;
+        }
+        li{
+            padding: 10px 40px;
+        }
     }
 }
