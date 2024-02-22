@@ -1,7 +1,53 @@
 body{
-    margin:0;
     background-image: url("./resources/bg.jpg");
+    background-position: center;
+}
+#icon{
+    width: 100%;
+    text-align: center;
+    margin-top: 200px;
+    >svg{
+        width: 10%;
+    }
 }
 
-#background{
+#title{
+    margin-bottom: 50px;
+    h1{
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+}
+#intro{
+    margin-bottom: 50px;
+    p{
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Courier New', Courier, monospace;
+        margin-bottom: 50px;
+    }
+    a{
+        color: white;
+        /* text-decoration: dotted; */
+        cursor: pointer;
+    }
+}
+#links{
+    ul{
+        padding: 0;
+    }
+    li{
+        list-style-type: none;
+        border: 1px solid white;
+        border-radius: 3px;
+        text-align: center;
+        padding: 20px 0;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        font-family: 'Courier New', Courier, monospace;
+    }
 }
